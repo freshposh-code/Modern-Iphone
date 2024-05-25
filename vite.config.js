@@ -7,9 +7,16 @@ export default defineConfig({
   plugins: [react(), sentryVitePlugin({
     org: "posh-association",
     project: "iphone-clone"
-  })],
+  })
+  ],
 
   build: {
     sourcemap: true
+  },
+  server: {
+    port: 3000,
+    mimeTypes: {
+      'application/javascript': ['js']
+    }
   }
 })
