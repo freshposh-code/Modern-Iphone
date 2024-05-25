@@ -1,11 +1,21 @@
-import React from 'react'
+
+// import * as Sentry from '@sentry/react';
+
+import { Features, Footer, Hero, Highlight, HowItWorks, Model, Navbar } from "./components";
+
 
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <main className="bg-black">
+      <Navbar />
+      <Hero />
+      <Highlight />
+      <Model />
+      <Features />
+      <HowItWorks />
+      <Footer />
+    </main>
   )
 }
 
-export default App
+export default App;
