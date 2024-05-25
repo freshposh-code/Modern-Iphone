@@ -1,12 +1,12 @@
 
-// import * as Sentry from '@sentry/react';
+import * as Sentry from '@sentry/react';
 
 import { Features, Footer, Hero, Highlight, HowItWorks, Model, Navbar } from "./components";
 
 
 const App = () => {
   return (
-    <main className="bg-black">
+    <main className="bg-black overflow-x-hidden">
       <Navbar />
       <Hero />
       <Highlight />
@@ -18,4 +18,4 @@ const App = () => {
   )
 }
 
-export default App;
+export default Sentry.withProfiler(App);
